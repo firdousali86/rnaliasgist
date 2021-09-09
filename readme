@@ -26,3 +26,19 @@ react-native run-android --variant=release
 react-native start --reset-cache
 gem install cocoapods
 pod repo remove master --verbose && pod setup --verbose && pod install --verbose
+
+
+============
+
+
+del node modules
+yarn cache clean
+yarn install
+watchman watch-del-all
+Kill the watchman daemon process
+
+yarn cache clean && yarn upgrade && yarn
+yes | ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
+
+sh update..
+gradle clean
