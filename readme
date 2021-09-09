@@ -9,3 +9,20 @@ alias gd="git pull origin"
 alias gu="git push origin"
 alias browse="open -a 'Google Chrome'"
 
+adb logcat *:S ReactNative:V ReactNativeJS:V
+adb logcat | grep 'app'
+
+
+
+watchman watch-del-all
+rm -rf node_modules
+yarn install
+npm start -- --reset-cache
+rm -rf node_modules && yarn install && yarn start --reset-cache
+rm -rf /tmp/metro-*
+rm -rf ~/Library/Developer/Xcode/DerivedData
+pod deintegrate && pod cache clean --all
+react-native run-android --variant=release
+react-native start --reset-cache
+gem install cocoapods
+pod repo remove master --verbose && pod setup --verbose && pod install --verbose
