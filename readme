@@ -1,0 +1,11 @@
+ALIASES
+
+alias run-release="react-native run-android --variant=release"
+alias run="react-native run-android"
+alias release="cd android && ./gradlew assembleRelease && cd .."
+alias clean="cd android && ./gradlew clean && cd .."
+alias dmenu="adb shell input keyevent 82"
+alias gd="git pull origin"
+alias gu="git push origin"
+alias browse="open -a 'Google Chrome'"
+
